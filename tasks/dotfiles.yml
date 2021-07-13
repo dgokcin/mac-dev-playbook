@@ -1,9 +1,17 @@
 ---
 - name: Checkout dotfiles
-  ansible.builtin.git:
+  git:
     repo: 'https://github.com/dgokcin/dotfiles.git'
+    force: yes
+    depth: 1
+    recursive: no
     dest: ~/codes/dotfiles
     version: master
+
+- name: Add submodules
+  shell: git submodule update --init --recursive --depth 1
+  args:
+    chdir: "~/codes/dotfiles"
 
 # Pass in extra arguments to build
 - name: Run 'install' target as root
