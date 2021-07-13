@@ -6,6 +6,7 @@
     version: master
 
 # Pass in extra arguments to build
-- make:
+- name: Run 'install' target as root
+  community.general.make:
     chdir: ~/codes/dotfiles
     target: personal
