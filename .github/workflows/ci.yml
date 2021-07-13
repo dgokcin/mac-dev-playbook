@@ -27,7 +27,7 @@ jobs:
 
       - name: Lint code.
         run: |
-          yamllint -w .
+          yamllint .
           ansible-lint
 
   integration:

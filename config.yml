@@ -3,7 +3,8 @@ downloads: ~/.ansible-downloads/
 
 configure_dotfiles: true
 configure_terminal: true
-configure_osx: true
+# TODO
+configure_osx: false
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: false
