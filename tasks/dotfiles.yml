@@ -3,6 +3,7 @@
   ansible.builtin.git:
     repo: 'https://github.com/dgokcin/dotfiles.git'
     dest: ~/codes/dotfiles
+    version: master
 
 # Pass in extra arguments to build
 - make:
