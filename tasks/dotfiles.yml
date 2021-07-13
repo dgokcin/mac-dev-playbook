@@ -1,17 +1,9 @@
 ---
 - name: Checkout dotfiles
-  git:
-    repo: 'https://github.com/dgokcin/dotfiles.git'
-    force: yes
-    depth: 1
-    recursive: no
+  ansible.builtin.git:
+    repo: 'git@github.com:dgokcin/mac-dev-playbook.git'
     dest: ~/codes/dotfiles
     version: master
-
-- name: Add submodules
-  shell: git submodule update --init --recursive --depth 1
-  args:
-    chdir: "~/codes/dotfiles"
 
 # Pass in extra arguments to build
 - name: Run 'install' target as root
