@@ -57,6 +57,8 @@ homebrew_cask_apps:
   - slack
   - whatsapp
   - iterm2
+  - nordvpn
+  - spotify
   - zoom
 
 # See `geerlingguy.mas` role documentation for usage instructions.
