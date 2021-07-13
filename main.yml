@@ -34,6 +34,10 @@
       when: configure_terminal
       tags: ['terminal']
 
+    - import_tasks: tasks/dotfiles.yml
+      when: configure_dotfiles
+      tags: ['dotfiles']
+
     - import_tasks: tasks/osx.yml
       when: configure_osx
       tags: ['osx']

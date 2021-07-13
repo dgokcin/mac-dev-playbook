@@ -1,0 +1,10 @@
+---
+- name: Checkout dotfiles
+  ansible.builtin.git:
+    repo: 'https://github.com/dgokcin/dotfiles.git'
+    dest: ~/codes/dotfiles
+
+# Pass in extra arguments to build
+- make:
+    chdir: ~/codes/dotfiles
+    target: personal

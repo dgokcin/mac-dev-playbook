@@ -24,21 +24,35 @@ sudoers_custom_config: ''
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
-dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/codes/dotfiles
-dotfiles_files:
-  - .zshrc
-  - .gitignore
-  - .inputrc
-  - .osx
-  - .vimrc
+# dotfiles_repo: https://github.com/dgokcin/dotfiles.git
+# dotfiles_repo_accept_hostkey: true
+# dotfiles_repo_local_destination: ~/codes/dotfiles
+# dotfiles_files:
+#   - .aliases
+#   - .bash_profile
+#   - .extra
+#   - .functions
+#   - .gitconfig.personal
+#   - .gitconfig.str
+#   - .gitconfig.work
+#   - .gvimrc
+#   - .ideavimrc
+#   - .init.vim
+#   - .inputrc
+#   - .osx
+#   - .path
+#   - .terminator.config
+#   - .vscodevimrc
+#   - .vsvimrc
+#   - .zshrc
+
 
 homebrew_installed_packages:
   - bash-completion
   - git
   - ssh-copy-id
   - kubernetes-cli
+  - make
   - wget
   - vim
   - zsh-history-substring-search
