@@ -24,29 +24,6 @@ sudoers_custom_config: ''
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
-# dotfiles_repo: https://github.com/dgokcin/dotfiles.git
-# dotfiles_repo_accept_hostkey: true
-# dotfiles_repo_local_destination: ~/codes/dotfiles
-# dotfiles_files:
-#   - .aliases
-#   - .bash_profile
-#   - .extra
-#   - .functions
-#   - .gitconfig.personal
-#   - .gitconfig.str
-#   - .gitconfig.work
-#   - .gvimrc
-#   - .ideavimrc
-#   - .init.vim
-#   - .inputrc
-#   - .osx
-#   - .path
-#   - .terminator.config
-#   - .vscodevimrc
-#   - .vsvimrc
-#   - .zshrc
-
-
 homebrew_installed_packages:
   - bash-completion
   - git
@@ -71,7 +48,6 @@ homebrew_cask_apps:
   - slack
   - whatsapp
   - iterm2
-  - nordvpn
   - spotify
   - zoom
 
@@ -80,6 +56,7 @@ mas_installed_apps: []
 mas_email: ""
 mas_password: ""
 
+# TODO
 osx_script: "~/.osx --no-restart"
 
 # Install packages from other package managers.

@@ -1,7 +1,7 @@
 ---
 - name: Checkout dotfiles
   ansible.builtin.git:
-    repo: 'git@github.com:dgokcin/mac-dev-playbook.git'
+    repo: 'https://github.com/dgokcin/dotfiles.git'
     force: yes
     dest: ~/codes/dotfiles
     version: master
