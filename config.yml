@@ -4,7 +4,7 @@ downloads: ~/.ansible-downloads/
 configure_dotfiles: true
 configure_terminal: false
 # TODO
-configure_osx: false
+configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: false
@@ -60,7 +60,6 @@ mas_installed_apps: []
 mas_email: ""
 mas_password: ""
 
-# TODO
 osx_script: "~/.osx --no-restart"
 
 # Install packages from other package managers.
