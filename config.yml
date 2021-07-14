@@ -2,8 +2,9 @@
 downloads: ~/.ansible-downloads/
 
 configure_dotfiles: true
-configure_terminal: true
-configure_osx: true
+configure_terminal: false
+# TODO
+configure_osx: false
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: false
@@ -24,20 +25,12 @@ sudoers_custom_config: ''
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
-dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/codes/dotfiles
-dotfiles_files:
-  - .zshrc
-  - .gitignore
-  - .inputrc
-  - .osx
-  - .vimrc
-
 homebrew_installed_packages:
   - bash-completion
   - git
   - ssh-copy-id
+  - kubernetes-cli
+  - make
   - wget
   - vim
   - zsh-history-substring-search
@@ -45,6 +38,7 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - homebrew/cask-fonts
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -55,13 +49,18 @@ homebrew_cask_apps:
   - google-chrome
   - slack
   - whatsapp
+  - iterm2
+  - spotify
   - zoom
+  - font-ubuntu-mono-nerd-font
+  - font-hack-nerd-font
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
 mas_email: ""
 mas_password: ""
 
+# TODO
 osx_script: "~/.osx --no-restart"
 
 # Install packages from other package managers.
