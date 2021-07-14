@@ -2,7 +2,7 @@
 - name: Checkout dotfiles
   ansible.builtin.git:
     repo: 'https://github.com/dgokcin/dotfiles.git'
-    force: yes
+    #force: yes
     dest: ~/codes/dotfiles
     version: master
 
