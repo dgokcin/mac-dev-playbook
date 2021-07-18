@@ -4,15 +4,15 @@ downloads: ~/.ansible-downloads/
 configure_dotfiles: true
 configure_terminal: false
 # TODO
-configure_osx: false
+configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
-configure_dock: false
+configure_dock: true
 dockitems_remove: []
-# - Launchpad
-# - TV
-# - Podcasts
-# - 'App Store'
+ - Launchpad
+ - TV
+ - Podcasts
+ - 'App Store'
 dockitems_persist: []
 # - name: "Sublime Text"
 #   path: "/Applications/Sublime Text.app/"
@@ -52,6 +52,7 @@ homebrew_cask_apps:
   - iterm2
   - spotify
   - zoom
+  - meld
   - font-ubuntu-mono-nerd-font
   - font-hack-nerd-font
 
@@ -60,7 +61,6 @@ mas_installed_apps: []
 mas_email: ""
 mas_password: ""
 
-# TODO
 osx_script: "~/.osx --no-restart"
 
 # Install packages from other package managers.
