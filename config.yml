@@ -33,11 +33,15 @@ homebrew_installed_packages:
   - make
   - wget
   - vim
+  - macvim
   - zsh-history-substring-search
+  - awscli
+  - aws-sam-cli
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - aws/tap
   - homebrew/cask-fonts
 
 homebrew_cask_appdir: /Applications
@@ -56,6 +60,7 @@ homebrew_cask_apps:
   - font-ubuntu-mono-nerd-font
   - font-hack-nerd-font
   - adguard
+  - intellij-idea
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
