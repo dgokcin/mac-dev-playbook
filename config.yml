@@ -4,7 +4,7 @@ downloads: ~/.ansible-downloads/
 configure_dotfiles: true
 configure_terminal: false
 # TODO
-configure_osx: true
+configure_osx: false
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: false
@@ -33,11 +33,15 @@ homebrew_installed_packages:
   - make
   - wget
   - vim
+  - macvim
   - zsh-history-substring-search
+  - awscli
+  - aws-sam-cli
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - aws/tap
   - homebrew/cask-fonts
 
 homebrew_cask_appdir: /Applications
@@ -55,6 +59,7 @@ homebrew_cask_apps:
   - meld
   - font-ubuntu-mono-nerd-font
   - font-hack-nerd-font
+  - adguard
   - intellij-idea
 
 # See `geerlingguy.mas` role documentation for usage instructions.
